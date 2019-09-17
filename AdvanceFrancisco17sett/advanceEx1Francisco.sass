@@ -1,0 +1,80 @@
+$width: 300px
+$height: 300px
+$PicSize: 100% 
+$background: white
+$border: 1px solid black
+$box-shadow: 10px 10px lightgrey
+$transform: scale(1.1)
+$box-shadow: 5px 10px 20px grey
+$widthImmages: 350px
+$transition-timing-function: ease-in-out
+
+.wrapper
+	width: $PicSize
+	height: $height
+	display: flex
+	background: $background
+	justify-content: space-around
+
+
+.column
+	width: $PicSize
+	height: $PicSize
+
+.immages
+	width: 20%
+	height: 200px
+	border: $border
+	box-shadow: $box-shadow
+	-webkit-transition: width 3s, height 3s, -webkit-transform 3s /* Safari */
+	transition: width 3s, height 3s, transform 3s
+	transition-timing-function: $transition-timing-function
+
+.immages:hover 
+	width: $widthImmages
+	height: 200px
+	box-shadow: $box-shadow
+	transform: $transform
+	transition-timing-function: $transition-timing-function
+
+.immagesCentral
+	width: 23%
+	height: 200px
+	border: $border
+	box-shadow: $box-shadow
+	-webkit-transition: width 3s, height 3s, -webkit-transform 3s /* Safari */
+	transition: width 3s, height 3s, transform 3s
+	transition-timing-function: $transition-timing-function
+
+.immagesCentral:hover 
+	width: $widthImmages
+	height: 200px
+	box-shadow: $box-shadow
+	transform: $transform
+	transition-timing-function: $transition-timing-function
+
+.immages>p
+	text-align: center
+
+.immagesCentral>p
+	text-align: center 
+
+.header>p
+	text-align: center 
+	font-size: 40px
+
+@media only screen and (max-width: 600px)
+	body
+		background-color: lightgrey
+	.wrapper
+		display: flex
+		flex-flow: column
+		margin: 6px
+	.marginImages
+		margin: 6px
+	.query
+		display: flex
+	.query p
+		margin-left: 10px
+
+		
